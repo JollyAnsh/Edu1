@@ -16,10 +16,14 @@
 
 
 html {
-  font-family: var(--ff-poppins);
+  font-family: 'Poppins', sans-serif !important;
   scroll-behavior: smooth;
 }
 
+
+.fs-5xl{
+  font-size: 70px;
+}
 
 
 /*-----------------------------------*\
