@@ -40,16 +40,16 @@
 
     <div class="overlay" data-overlay></div>
 
-    <div class="header-top">
-      <div class="container d-flex justify-content-center">
-        <a href="#" class="logo">
-          <img src="./assets/images/logo2.png" alt="EduVentures logo">
+    <div class="d-flex align-items-center justify-content-center mt-3">
+      <div class="w-25">
+        <a href="#">
+          <img class="w-100" src="./assets/images/logo2.png" alt="EduVentures logo">
         </a>
       </div>
     </div>
     </div>
     <div>
-      <div class="d-flex justify-content-between align-items-center mx-5">
+      <div class="d-flex justify-content-between align-items-center mx-5 m-2">
         <div class="ms-5 ps-5 d-flex justify-content-center align-items-center flex-grow-1">
           <nav class="navbar navbar-expand-lg bg-none m-2">
             <div class="container-fluid">
@@ -75,7 +75,7 @@
             </div>
           </nav>
         </div>
-        <button class="btn btn-primary btn-lg ms-auto rounded-pill">BOOK NOW</button>
+        <button class="btn btn-primary ms-auto rounded-pill">BOOK NOW</button>
       </div>
     </div>
     
@@ -154,26 +154,27 @@
         - #POPULAR
       -->
 
-  <section class="popular" id="destination">
-    <div class="container">
-      <h2 class="h2 section-title">Popular Tours</h2>
+  <section>
+    <div class="m-5">
+      <h2 class="h1 fw-bold text-center text-uppercase">Popular Tours</h2>
+      <div class="d-flex justify-content-center align-items-center">
+        <p class="text-center text-secondary w-50">
+          Discover our most popular tours that offer engaging experiences, unique insights, and unforgettable adventures.
+        </p>
+      </div>
 
-      <p class="section-text">
-        Discover our most popular tours that offer engaging experiences, unique insights, and unforgettable adventures.
-      </p>
-
-      <ul class="popular-list">
+      <ul class="popular-list list-unstyled m-5">
 
         <li>
-          <div class="popular-card">
+          <div class="popular-card rounded-5">
 
             <figure class="card-img">
               <img src="./assets/images/popular-1.jpg" alt="Qutub Minar">
             </figure>
 
-            <div class="card-content">
+            <div class="card-content bg-white rounded-5">
 
-              <div class="card-rating">
+              <div class="card-rating bg-primary text-white rounded-pill">
                 <ion-icon name="star"></ion-icon>
                 <ion-icon name="star"></ion-icon>
                 <ion-icon name="star"></ion-icon>
@@ -182,11 +183,11 @@
               </div>
 
               <p class="card-subtitle">
-                <a href="#">Delhi</a>
+                <a class="text-decoration-none" href="#">Delhi</a>
               </p>
 
-              <h3 class="h3 card-title">
-                <a href="#">Qutub Minar</a>
+              <h3 class="h5 my-2 card-title">
+                <a class="text-dark text-decoration-none text-uppercase fw-bold" href="#">Qutub Minar</a>
               </h3>
 
               <p class="card-text">
@@ -198,15 +199,15 @@
         </li>
 
         <li>
-          <div class="popular-card">
+          <div class="popular-card rounded-5">
 
             <figure class="card-img">
               <img src="./assets/images/popular-2.jpg" alt="Amer Fort" loading="lazy">
             </figure>
 
-            <div class="card-content">
+            <div class="card-content bg-white rounded-5">
 
-              <div class="card-rating">
+              <div class="card-rating bg-primary text-white rounded-pill">
                 <ion-icon name="star"></ion-icon>
                 <ion-icon name="star"></ion-icon>
                 <ion-icon name="star"></ion-icon>
@@ -215,11 +216,11 @@
               </div>
 
               <p class="card-subtitle">
-                <a href="#">Rajasthan</a>
+                <a class="text-decoration-none" href="#">Rajasthan</a>
               </p>
 
-              <h3 class="h3 card-title">
-                <a href="#">Amer Fort</a>
+              <h3 class="h5 my-2 card-title">
+                <a class="text-dark text-decoration-none text-uppercase fw-bold" href="#">Amer Fort</a>
               </h3>
 
               <p class="card-text">
@@ -231,15 +232,15 @@
         </li>
 
         <li>
-          <div class="popular-card">
+          <div class="popular-card rounded-5">
 
             <figure class="card-img">
               <img src="./assets/images/popular-3.jpg" alt="Indian Museum" loading="lazy">
             </figure>
 
-            <div class="card-content">
+            <div class="card-content bg-white rounded-5">
 
-              <div class="card-rating">
+              <div class="card-rating bg-primary text-white rounded-pill">
                 <ion-icon name="star"></ion-icon>
                 <ion-icon name="star"></ion-icon>
                 <ion-icon name="star"></ion-icon>
@@ -248,11 +249,11 @@
               </div>
 
               <p class="card-subtitle">
-                <a href="#">West Bengal</a>
+                <a class="text-decoration-none" href="#">West Bengal</a>
               </p>
 
-              <h3 class="h3 card-title">
-                <a href="#">Indian Museum</a>
+              <h3 class="h5 my-2 card-title">
+                <a class="text-dark text-decoration-none text-uppercase fw-bold" href="#">Indian Museum</a>
               </h3>
 
               <p class="card-text">
@@ -264,9 +265,12 @@
         </li>
 
       </ul>
-      <a href="tours.html">
-      <button class="btn btn-primary">More Tours</button>
-    </a>
+      <div class="d-flex justify-content-center align-items-center">
+        <a href="tours.html">
+        <button class="btn btn-primary rounded-5 btn-lg text-uppercase">More Tours</button>
+        </a>
+
+      </div>
     </div>
   </section>
 
@@ -277,15 +281,14 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
+  <footer class="bg-primary">
 
-    <div class="footer-top">
-      <div class="container">
+    <div class="pt-5 px-5">
+      <div class="d-flex">
 
-        <div class="footer-brand">
-            <img src="./assets/images/logo2.png" alt="EduVentures logo">
-      
-          <p class="footer-text">
+        <div class="w-75">
+          <img class="w-25" src="./assets/images/logo2.png" alt="EduVentures logo">
+          <p class="text-white w-50">
             EduVentures blends education with adventure, offering tailored tours that spark curiosity and create lasting
             memories. Explore with us and make every journey a learning experience. Contact us to start your adventure!
           </p>
@@ -294,23 +297,22 @@
 
 
         <br>
-        <div class="footer-contact">
+        <div>
 
-          <h4 class="contact-title">Contact Us</h4>
+          <h4 class="text-white">Contact Us</h4>
 
-          <p class="contact-text">
+          <p class="text-white">
             Feel free to contact and reach us !!
           </p>
 
           <ul>
 
-            <li class="contact-item">
+            <li class="text-white d-flex">
               <ion-icon name="call-outline"></ion-icon>
-
               <p>+01234 56789</p>
             </li>
 
-            <li class="contact-item">
+            <li class="text-white d-flex">
               <ion-icon name="mail-outline"></ion-icon>
 
               <p>eduventures@gmail.com</p>

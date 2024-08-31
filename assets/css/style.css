@@ -30,26 +30,6 @@ html {
  * #HEADER
 \*-----------------------------------*/
 
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 61px;
-  z-index: 4;
-}
-
-.header-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: var(--transition);
-  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
-  padding-block: 15px;
-  z-index: 1;
-}
-
 
 /*-----------------------------------*\
  * #HERO
@@ -73,40 +53,6 @@ html {
  * #TOUR SEARCH
 \*-----------------------------------*/
 
-.tour-search {
-  background: var(--bright-navy-blue);
-  padding-block: var(--section-padding);
-}
-
-.tour-search-form .input-label {
-  color: var(--white);
-  font-size: var(--fs-4);
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-
-.tour-search-form .input-field {
-  background: var(--white);
-  padding: 10px 15px;
-  font-size: var(--fs-5);
-  border-radius: 50px;
-}
-
-.tour-search-form .input-field::placeholder { color: var(--spanish-gray); }
-
-.tour-search-form .input-field::-webkit-datetime-edit {
-  color: var(--spanish-gray);
-  text-transform: uppercase;
-}
-
-.tour-search-form .input-wrapper { margin-bottom: 15px; }
-
-.tour-search .btn {
-  width: 100%;
-  --border-width: 1px;
-  font-weight: var(--fw-600);
-  margin-top: 35px;
-}
 
 
 
@@ -116,10 +62,7 @@ html {
  * #POPULAR
 \*-----------------------------------*/
 
-.popular { padding-block: var(--section-padding); }
 
-.popular-list,
-.popular-list > li:not(:last-child) { margin-bottom: 30px; }
 
 .popular-card {
   position: relative;
@@ -170,13 +113,6 @@ html {
   text-transform: uppercase;
   margin-bottom: 8px;
 }
-
-.popular-card .card-title { margin-bottom: 5px; }
-
-.popular-card :is(.card-subtitle, .card-title) > a { color: inherit; }
-
-.popular .btn { margin-inline: auto; }
-
 
 
 
@@ -351,130 +287,6 @@ html {
  * #FOOTER
 \*-----------------------------------*/
 
-.footer-top {
-  background: var(--gunmetal);
-  padding-block: var(--section-padding);
-  color: var(--gainsboro);
-}
-
-.footer-brand { margin-bottom: 30px; }
-
-.footer-brand img { width: 180px; }
-
-.footer-brand .logo { margin-bottom: 20px; }
-
-.footer-text {
-  font-size: var(--fs-5);
-  line-height: 1.7;
-}
-
-.footer-contact { margin-bottom: 30px; }
-
-.contact-title {
-  position: relative;
-  font-family: var(--ff-montserrat);
-  font-weight: var(--fw-500);
-  margin-bottom: 30px;
-}
-
-.contact-title::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background: var(--bright-navy-blue);
-}
-
-.contact-text {
-  font-size: var(--fs-5);
-  margin-bottom: 15px;
-  max-width: 200px;
-}
-
-.contact-item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.contact-item ion-icon { --ionicon-stroke-width: 40px; }
-
-.contact-link,
-address {
-  font-style: normal;
-  color: var(--gainsboro);
-  font-size: var(--fs-5);
-}
-
-.contact-link:is(:hover, :focus) { color: var(--white); }
-
-.form-text {
-  font-size: var(--fs-5);
-  margin-bottom: 20px;
-}
-
-.footer-form .input-field {
-  background: var(--white);
-  font-size: var(--fs-5);
-  padding: 15px 20px;
-  border-radius: 100px;
-  margin-bottom: 10px;
-}
-
-.footer-form .btn { width: 100%; }
-
-.footer-bottom {
-  --gunmetal: hsl(205, 36%, 17%);
-  background: var(--gunmetal);
-  padding-block: 20px;
-  text-align: center;
-}
-
-.copyright {
-  color: var(--gainsboro);
-  font-size: var(--fs-5);
-  margin-bottom: 10px;
-}
-
-.copyright a {
-  color: inherit;
-  display: inline-block;
-}
-
-.copyright a:is(:hover, :focus) { color: var(--white); }
-
-.footer-bottom-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 21px;
-}
-
-.footer-bottom-list > li { position: relative; }
-
-.footer-bottom-list > li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  right: -10px;
-  bottom: 3px;
-  width: 1px;
-  background: hsla(0, 0%, 100%, 0.2);
-}
-
-.footer-bottom-link {
-  color: var(--gainsboro);
-  font-size: var(--fs-7);
-  transition: var(--transition);
-}
-
-.footer-bottom-link:is(:hover, :focus) { color: var(--white); }
-
-
 
 
 
@@ -492,55 +304,16 @@ address {
  * responsive for larger than 580px screen
  */
 
-@media (min-width: 580px) {
 
   /**
    * REUSED STYLE
    */
 
-  .container {
-    max-width: 580px;
-    margin-inline: auto;
-  }
-
-  .btn {
-    --fs-5: 16px;
-    --padding: 12px 30px;
-  }
-
-    .btn {
-    --fs-5: 16px;
-    --padding: 12px 30px;
-  }
-  section:not(.cta) :is(.section-subtitle, .section-title, .section-text) {
-    text-align: center;
-  }
-
-  .section-text { margin-bottom: 40px; }
-
-  .card-text { --fs-5: 15px; }
 
 
   /**
    * HEADER
    */
-
-  .header { padding-top: 83px; }
-
-  .helpline-box .icon-box { padding: 14px; }
-
-  .header-top .logo img { 
-    height:50px;
-    max-width: unset; }
-
-  .search-btn { font-size: 30px; }
-
-  .nav-open-btn { font-size: 40px; }
-
-  .header .btn {
-    --fs-5: 14px;
-    --padding: 6px 20px;
-  }
 
 
 
@@ -592,12 +365,6 @@ address {
   /**
    * FOOTER
    */
-
-  .footer .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
 
 
   
@@ -926,4 +693,4 @@ address {
 
   .container { max-width: 1180px; }
 
-}}
+}
